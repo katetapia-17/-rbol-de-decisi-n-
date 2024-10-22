@@ -18,7 +18,7 @@ df.isnull().sum()
 # Eliminar filas con valores nulos 
 df.dropna(inplace=True)
 
-# Definir X (todas las columnas menos la columna objetivo) e y (la variable objetivo)
+# Definir X y Y
 X = df.drop("quality", axis=1) 
 y = df["quality"]
 
